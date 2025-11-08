@@ -18,7 +18,6 @@ public String getCategory()
 {
     return 5;
 }
-
 @PostMapping
 public String getPostCategory()
 {
