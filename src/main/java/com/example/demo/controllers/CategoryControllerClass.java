@@ -24,5 +24,4 @@ public String getPostCategory()
 {
     return "post Electronics";
 }
-
 }
