@@ -10,6 +10,7 @@ public class EcommerceSpringApplication {
 		dotenv.entries().forEach(entry ->
 				System.setProperty(entry.getKey(), entry.getValue())
 		);//set system properties from env variables and set them.
+		//NOTE: we must load the env variables before we start the application.
 		SpringApplication.run(EcommerceSpringApplication.class, args);
 	}
 }
