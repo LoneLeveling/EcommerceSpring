@@ -24,6 +24,19 @@ public class EmployeeController {
 
         }
     }
+    @PostMapping
+    public EmployeeDTO createNewEmployee(@RequestBody EmployeeDTO employeeDTO)
+    {
+        employeeDTO.setId(100L);
+        employeeDTO.setName("Abhishek");
+        return employeeDTO;
+    }
+
+    @PutMapping
+    public String updateEmployeeById()
+    {
+        return "Hello from PUT";
+    }
 }
 //“@RequestParam is required by default. Without required=false, Spring rejects missing parameters before the controller method is invoked,
 // so null checks inside the method are ineffective.”
