@@ -18,9 +18,9 @@ public class EmployeeController {
                                  @RequestParam(required = false) String sortBy)  //required = false <-- makes the field optional
     {
         {
-            if (age == null) {
-                return "Enter a value for age";
-            } else return "Hi the age is: " +age+ " "+sortBy;
+            if ( age== null) {
+                return "Enter a value for ";
+            } else return "Hi the  is: "+age+ " "+sortBy;
 
         }
     }
